@@ -1,0 +1,12 @@
+# /etc/sudoers
+
+##
+## This file is puppet managed.
+## Don't edit it on your own
+##
+
+Defaults	env_reset
+Defaults        env_keep+="http_proxy"
+Defaults        syslog=auth, syslog_badpri=alert, syslog_goodpri=notice
+
+#includedir /etc/sudoers.d
